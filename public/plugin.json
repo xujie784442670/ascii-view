@@ -1,0 +1,13 @@
+{
+  "main": "index.html",
+  "logo": "logo.png",
+
+  "features": [
+    {
+      "code": "ascii",
+      "explain": "查看ASCII码表",
+      "cmds":["ASCII","AV"],
+      "type": "text"
+    }
+  ]
+}

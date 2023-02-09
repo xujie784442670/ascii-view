@@ -1,0 +1,642 @@
+[
+  {
+    "value": 0,
+    "comment": "空字符",
+    "characters": "NUL(null)"
+  },
+  {
+    "value": 1,
+    "comment": "标题开始",
+    "characters": "SOH(start of headline)"
+  },
+  {
+    "value": 2,
+    "comment": "正文开始",
+    "characters": "STX (start of text)"
+  },
+  {
+    "value": 3,
+    "comment": "正文结束",
+    "characters": "ETX (end of text)"
+  },
+  {
+    "value": 4,
+    "comment": "传输结束",
+    "characters": "EOT (end of transmission)"
+  },
+  {
+    "value": 5,
+    "comment": "请求",
+    "characters": "ENQ (enquiry)"
+  },
+  {
+    "value": 6,
+    "comment": "收到通知",
+    "characters": "ACK (acknowledge)"
+  },
+  {
+    "value": 7,
+    "comment": "响铃",
+    "characters": "BEL (bell)"
+  },
+  {
+    "value": 8,
+    "comment": "退格",
+    "characters": "BS (backspace)"
+  },
+  {
+    "value": 9,
+    "comment": "水平制表符",
+    "characters": "HT (horizontal tab)"
+  },
+  {
+    "value": 10,
+    "comment": "换行键",
+    "characters": "LF (NL line feed, new line)"
+  },
+  {
+    "value": 11,
+    "comment": "垂直制表符",
+    "characters": "VT (vertical tab)"
+  },
+  {
+    "value": 12,
+    "comment": "换页键",
+    "characters": "FF (NP form feed, new page)"
+  },
+  {
+    "value": 13,
+    "comment": "回车键",
+    "characters": "CR (carriage return)"
+  },
+  {
+    "value": 14,
+    "comment": "不用切换",
+    "characters": "SO (shift out)"
+  },
+  {
+    "value": 15,
+    "comment": "启用切换",
+    "characters": "SI (shift in)"
+  },
+  {
+    "value": 16,
+    "comment": "数据链路转义",
+    "characters": "DLE (data link escape)"
+  },
+  {
+    "value": 17,
+    "comment": "设备控制1",
+    "characters": "DC1 (device control 1)"
+  },
+  {
+    "value": 18,
+    "comment": "设备控制2",
+    "characters": "DC2 (device control 2)"
+  },
+  {
+    "value": 19,
+    "comment": "设备控制3",
+    "characters": "DC3 (device control 3)"
+  },
+  {
+    "value": 20,
+    "comment": "设备控制4",
+    "characters": "DC4 (device control 4)"
+  },
+  {
+    "value": 21,
+    "comment": "拒绝接收",
+    "characters": "NAK (negative acknowledge)"
+  },
+  {
+    "value": 22,
+    "comment": "同步空闲",
+    "characters": "SYN (synchronous idle)"
+  },
+  {
+    "value": 23,
+    "comment": "结束传输块",
+    "characters": "ETB (end of trans. block)"
+  },
+  {
+    "value": 24,
+    "comment": "取消",
+    "characters": "CAN (cancel)"
+  },
+  {
+    "value": 25,
+    "comment": "媒介结束",
+    "characters": "EM (end of medium)"
+  },
+  {
+    "value": 26,
+    "comment": "代替",
+    "characters": "SUB (substitute)"
+  },
+  {
+    "value": 27,
+    "comment": "换码(溢出)",
+    "characters": "ESC (escape)"
+  },
+  {
+    "value": 28,
+    "comment": "文件分隔符",
+    "characters": "FS (file separator)"
+  },
+  {
+    "value": 29,
+    "comment": "分组符",
+    "characters": "GS (group separator)"
+  },
+  {
+    "value": 30,
+    "comment": "记录分隔符",
+    "characters": "RS (record separator)"
+  },
+  {
+    "value": 31,
+    "comment": "单元分隔符",
+    "characters": "US (unit separator)"
+  },
+  {
+    "value": 32,
+    "comment": "空格",
+    "characters": "(space)"
+  },
+  {
+    "value": 33,
+    "comment": "叹号",
+    "characters": "!"
+  },
+  {
+    "value": 34,
+    "comment": "双引号",
+    "characters": "\""
+  },
+  {
+    "value": 35,
+    "comment": "井号",
+    "characters": "#"
+  },
+  {
+    "value": 36,
+    "comment": "美元符",
+    "characters": "$"
+  },
+  {
+    "value": 37,
+    "comment": "百分号",
+    "characters": "%"
+  },
+  {
+    "value": 38,
+    "comment": "和号",
+    "characters": "&"
+  },
+  {
+    "value": 39,
+    "comment": "闭单引号",
+    "characters": "'"
+  },
+  {
+    "value": 40,
+    "comment": "开括号",
+    "characters": "("
+  },
+  {
+    "value": 41,
+    "comment": "闭括号",
+    "characters": ")"
+  },
+  {
+    "value": 42,
+    "comment": "星号",
+    "characters": "*"
+  },
+  {
+    "value": 43,
+    "comment": "加号",
+    "characters": "+"
+  },
+  {
+    "value": 44,
+    "comment": "逗号",
+    "characters": ","
+  },
+  {
+    "value": 45,
+    "comment": "减号/破折号",
+    "characters": "-"
+  },
+  {
+    "value": 46,
+    "comment": "句号",
+    "characters": "."
+  },
+  {
+    "value": 47,
+    "comment": "斜杠",
+    "characters": "/"
+  },
+  {
+    "value": 48,
+    "comment": "字符0",
+    "characters": "0"
+  },
+  {
+    "value": 49,
+    "comment": "字符1",
+    "characters": "1"
+  },
+  {
+    "value": 50,
+    "comment": "字符2",
+    "characters": "2"
+  },
+  {
+    "value": 51,
+    "comment": "字符3",
+    "characters": "3"
+  },
+  {
+    "value": 52,
+    "comment": "字符4",
+    "characters": "4"
+  },
+  {
+    "value": 53,
+    "comment": "字符5",
+    "characters": "5"
+  },
+  {
+    "value": 54,
+    "comment": "字符6",
+    "characters": "6"
+  },
+  {
+    "value": 55,
+    "comment": "字符7",
+    "characters": "7"
+  },
+  {
+    "value": 56,
+    "comment": "字符8",
+    "characters": "8"
+  },
+  {
+    "value": 57,
+    "comment": "字符9",
+    "characters": "9"
+  },
+  {
+    "value": 58,
+    "comment": "冒号",
+    "characters": ":"
+  },
+  {
+    "value": 59,
+    "comment": "分号",
+    "characters": ";"
+  },
+  {
+    "value": 60,
+    "comment": "小于",
+    "characters": "<"
+  },
+  {
+    "value": 61,
+    "comment": "等号",
+    "characters": "="
+  },
+  {
+    "value": 62,
+    "comment": "大于",
+    "characters": ">"
+  },
+  {
+    "value": 63,
+    "comment": "问号",
+    "characters": "?"
+  },
+  {
+    "value": 64,
+    "comment": "电子邮件符号",
+    "characters": "@"
+  },
+  {
+    "value": 65,
+    "comment": "大写字母A",
+    "characters": "A"
+  },
+  {
+    "value": 66,
+    "comment": "大写字母B",
+    "characters": "B"
+  },
+  {
+    "value": 67,
+    "comment": "大写字母C",
+    "characters": "C"
+  },
+  {
+    "value": 68,
+    "comment": "大写字母D",
+    "characters": "D"
+  },
+  {
+    "value": 69,
+    "comment": "大写字母E",
+    "characters": "E"
+  },
+  {
+    "value": 70,
+    "comment": "大写字母F",
+    "characters": "F"
+  },
+  {
+    "value": 71,
+    "comment": "大写字母G",
+    "characters": "G"
+  },
+  {
+    "value": 72,
+    "comment": "大写字母H",
+    "characters": "H"
+  },
+  {
+    "value": 73,
+    "comment": "大写字母I",
+    "characters": "I"
+  },
+  {
+    "value": 74,
+    "comment": "大写字母J",
+    "characters": "J"
+  },
+  {
+    "value": 75,
+    "comment": "大写字母K",
+    "characters": "K"
+  },
+  {
+    "value": 76,
+    "comment": "大写字母L",
+    "characters": "L"
+  },
+  {
+    "value": 77,
+    "comment": "大写字母M",
+    "characters": "M"
+  },
+  {
+    "value": 78,
+    "comment": "大写字母N",
+    "characters": "N"
+  },
+  {
+    "value": 79,
+    "comment": "大写字母O",
+    "characters": "O"
+  },
+  {
+    "value": 80,
+    "comment": "大写字母P",
+    "characters": "P"
+  },
+  {
+    "value": 81,
+    "comment": "大写字母Q",
+    "characters": "Q"
+  },
+  {
+    "value": 82,
+    "comment": "大写字母R",
+    "characters": "R"
+  },
+  {
+    "value": 83,
+    "comment": "大写字母S",
+    "characters": "S"
+  },
+  {
+    "value": 84,
+    "comment": "大写字母T",
+    "characters": "T"
+  },
+  {
+    "value": 85,
+    "comment": "大写字母U",
+    "characters": "U"
+  },
+  {
+    "value": 86,
+    "comment": "大写字母V",
+    "characters": "V"
+  },
+  {
+    "value": 87,
+    "comment": "大写字母W",
+    "characters": "W"
+  },
+  {
+    "value": 88,
+    "comment": "大写字母X",
+    "characters": "X"
+  },
+  {
+    "value": 89,
+    "comment": "大写字母Y",
+    "characters": "Y"
+  },
+  {
+    "value": 90,
+    "comment": "大写字母Z",
+    "characters": "Z"
+  },
+  {
+    "value": 91,
+    "comment": "开方括号",
+    "characters": "["
+  },
+  {
+    "value": 92,
+    "comment": "反斜杠",
+    "characters": "\\"
+  },
+  {
+    "value": 93,
+    "comment": "闭方括号",
+    "characters": "]"
+  },
+  {
+    "value": 94,
+    "comment": "脱字符",
+    "characters": "^"
+  },
+  {
+    "value": 95,
+    "comment": "下划线",
+    "characters": "_"
+  },
+  {
+    "value": 96,
+    "comment": "开单引号",
+    "characters": "`"
+  },
+  {
+    "value": 97,
+    "comment": "小写字母a",
+    "characters": "a"
+  },
+  {
+    "value": 98,
+    "comment": "小写字母b",
+    "characters": "b"
+  },
+  {
+    "value": 99,
+    "comment": "小写字母c",
+    "characters": "c"
+  },
+  {
+    "value": 100,
+    "comment": "小写字母d",
+    "characters": "d"
+  },
+  {
+    "value": 101,
+    "comment": "小写字母e",
+    "characters": "e"
+  },
+  {
+    "value": 102,
+    "comment": "小写字母f",
+    "characters": "f"
+  },
+  {
+    "value": 103,
+    "comment": "小写字母g",
+    "characters": "g"
+  },
+  {
+    "value": 104,
+    "comment": "小写字母h",
+    "characters": "h"
+  },
+  {
+    "value": 105,
+    "comment": "小写字母i",
+    "characters": "i"
+  },
+  {
+    "value": 106,
+    "comment": "小写字母j",
+    "characters": "j"
+  },
+  {
+    "value": 107,
+    "comment": "小写字母k",
+    "characters": "k"
+  },
+  {
+    "value": 108,
+    "comment": "小写字母l",
+    "characters": "l"
+  },
+  {
+    "value": 109,
+    "comment": "小写字母m",
+    "characters": "m"
+  },
+  {
+    "value": 110,
+    "comment": "小写字母n",
+    "characters": "n"
+  },
+  {
+    "value": 111,
+    "comment": "小写字母o",
+    "characters": "o"
+  },
+  {
+    "value": 112,
+    "comment": "小写字母p",
+    "characters": "p"
+  },
+  {
+    "value": 113,
+    "comment": "小写字母q",
+    "characters": "q"
+  },
+  {
+    "value": 114,
+    "comment": "小写字母r",
+    "characters": "r"
+  },
+  {
+    "value": 115,
+    "comment": "小写字母s",
+    "characters": "s"
+  },
+  {
+    "value": 116,
+    "comment": "小写字母t",
+    "characters": "t"
+  },
+  {
+    "value": 117,
+    "comment": "小写字母u",
+    "characters": "u"
+  },
+  {
+    "value": 118,
+    "comment": "小写字母v",
+    "characters": "v"
+  },
+  {
+    "value": 119,
+    "comment": "小写字母w",
+    "characters": "w"
+  },
+  {
+    "value": 120,
+    "comment": "小写字母x",
+    "characters": "x"
+  },
+  {
+    "value": 121,
+    "comment": "小写字母y",
+    "characters": "y"
+  },
+  {
+    "value": 122,
+    "comment": "小写字母z",
+    "characters": "z"
+  },
+  {
+    "value": 123,
+    "comment": "开花括号",
+    "characters": "{"
+  },
+  {
+    "value": 124,
+    "comment": "垂线",
+    "characters": "|"
+  },
+  {
+    "value": 125,
+    "comment": "闭花括号",
+    "characters": "}"
+  },
+  {
+    "value": 126,
+    "comment": "波浪号",
+    "characters": "~"
+  },
+  {
+    "value": 127,
+    "comment": "删除",
+    "characters": "DEL (delete)"
+  }
+]
