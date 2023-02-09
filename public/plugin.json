@@ -1,7 +1,9 @@
 {
   "main": "index.html",
   "logo": "logo.png",
-
+  "development": {
+    "main": "http://localhost/index.html"
+  },
   "features": [
     {
       "code": "ascii",

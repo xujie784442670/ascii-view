@@ -1,7 +1,25 @@
 <template>
 <el-container>
   <el-header>
-    <el-input v-model="query" placeholder="请输入需要搜索的关键字"></el-input>
+    <el-form :inline="true">
+      <el-form-item>
+        <el-input v-model="query.keyworkd" placeholder="请输入查询内容"></el-input>
+      </el-form-item>
+      <el-form-item>
+        <el-select v-model="query.type" placeholder="请选择查询类型">
+          <el-option label="默认" value="default"></el-option>
+          <el-option label="十进制" value="dec"></el-option>
+          <el-option label="二进制" value="bin"></el-option>
+          <el-option label="八进制" value="oct"></el-option>
+          <el-option label="十六进制" value="hex"></el-option>
+          <el-option label="缩写/字符" value="characters"></el-option>
+          <el-option label="解释" value="comment"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item>
+        <el-checkbox v-model="query.accurate">精确查询</el-checkbox>
+      </el-form-item>
+    </el-form>
   </el-header>
   <el-main>
     <el-table :data="tableData">
@@ -16,20 +34,45 @@
 </el-container>
 </template>
 <script setup lang="ts">
-import {computed, onMounted, ref} from "vue";
+import {computed, onMounted, ref, watch} from "vue";
 import data from './ascii.json'
 const asciiList = ref<Ascii[]>([])
-const query = ref<string>()
+const query = ref<{
+  keyworkd: string,
+  type: string,
+  accurate: boolean
+}>({
+  keyworkd: '',
+  type: 'default',
+  accurate: false
+})
+
+watch(query, (newVal, oldVal) => {
+  if(!newVal.keyworkd){
+    query.value.accurate = false
+    query.value.type = 'default'
+  }
+},{deep: true});
+
 const tableData = computed(()=>{
   if (query.value) {
-    let queryValue:string = query.value.toLowerCase()
+    let queryValue:string = query.value.keyworkd
     return asciiList.value.filter(item => {
-      if(item.dec.toString().toLowerCase().includes(queryValue)) return true
-      if(item.bin.toString().toLowerCase().includes(queryValue)) return true
-      if(item.oct.toString().toLowerCase().includes(queryValue)) return true
-      if(item.hex.toString().toLowerCase().includes(queryValue)) return true
-      if(item.characters.toString().toLowerCase().includes(queryValue)) return true
-      if(item.comment.toString().toLowerCase().includes(queryValue)) return true
+      let data = item as Record<string, any>
+      if (query.value.accurate) {
+        if (data[query.value.type] == queryValue) {
+          return true
+        }
+      } else {
+        queryValue = queryValue.toLowerCase()
+        if(query.value.type === 'default'){
+          return Object.values(data).some(value => {
+            return value.toString().toLowerCase().includes(queryValue)
+          })
+        }else{
+          return data[query.value.type].toString().toLowerCase().includes(queryValue)
+        }
+      }
       return false
     })
   } else {
