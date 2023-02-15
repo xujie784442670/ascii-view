@@ -1,14 +1,30 @@
 {
   "main": "index.html",
   "logo": "logo.png",
+  "preload": "preload.js",
   "development": {
     "main": "http://localhost/index.html"
   },
   "features": [
     {
-      "code": "ascii",
+      "code": "AssciiView",
       "explain": "查看ASCII码表",
-      "cmds":["ASCII","AV"],
+      "cmds": [
+        "ASCII",
+        "AV"
+      ],
+      "type": "text"
+    },
+    {
+      "code": "CharacterEntities",
+      "explain": "查看HTML实体字符",
+      "cmds": [
+        "HTML",
+        "CE",
+        "实体",
+        "字符",
+        "字符实体"
+      ],
       "type": "text"
     }
   ]

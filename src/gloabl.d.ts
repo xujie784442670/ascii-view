@@ -24,3 +24,33 @@ interface Ascii {
      */
     hex: string
 }
+
+interface Config{
+    /**
+     * 设置配置
+     * @param key
+     * @param value
+     */
+    setItem(key:string, value:any): void
+
+    /**
+     * 获取配置
+     * @param key
+     */
+    getItem(key:string): any
+
+    /**
+     * 删除配置
+     * @param key
+     */
+    removeItem(key:string): void
+
+    /**
+     * 更新配置
+     * @param key
+     * @param handler
+     */
+    updateItem(key:string,handler:Function): void
+}
+
+declare var config: Config
